@@ -4,7 +4,7 @@ require('dotenv').config();
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
 
-bot.start((ctx) => ctx.reply('Welcome! I'm Ayman bot powered by AI. Ask me anything!'));
+bot.start((ctx) => ctx.reply('Welcome! I'm Ayman's bot powered by AI. Ask me anything!'));
 
 bot.on('text', async (ctx) => {
   try {
