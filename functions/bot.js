@@ -11,7 +11,7 @@ bot.on('text', async (ctx) => {
     const response = await axios.post(
       'https://api.perplexity.ai/chat/completions',
       {
-        model: 'pplx-70b-online',
+        model: 'llama-3.1-70b-instruct',
         messages: [{ role: 'user', content: ctx.message.text }],
       },
       {
