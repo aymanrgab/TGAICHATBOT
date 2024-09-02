@@ -25,7 +25,7 @@ bot.on('text', async (ctx) => {
     const response = await axios.post(
       'https://api.perplexity.ai/chat/completions',
       {
-        model: 'pplx-70b-online',
+        model: 'llama-3.1-sonar-small-128k-chat',
         messages: conversationHistory[userId],
       },
       {
